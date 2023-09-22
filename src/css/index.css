@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FF6060;
+  height: 100%;
+}
+
+a {
+  color: #FF6060; /* Couleur du texte pour l'état normal */
+  font-size: 18px;
+  text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Style du footer */
+footer {
+  background-color: black;
+  font-size: 24;
+  color: white;
+  height: 209px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.taille-content{
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > a{
+  margin-left: 50px;
+}
+
+.link {
+  text-decoration: underline;
+}

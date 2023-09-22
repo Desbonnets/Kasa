@@ -1,19 +1,27 @@
 import React from 'react';
-import '../App.css';
-import {Link, Outlet} from 'react-router-dom';
+import '../css/App.css';
+import {Link, Outlet, useLocation } from 'react-router-dom';
 
 function Image(props){
   return <img src={props.src} alt=''/>
 }
 
+function Lien(props){
+  if(useLocation().pathname === props.to){
+    return <Link className='link' to={props.to}>{props.text}</Link>
+  }else{
+    return <Link to={props.to}>{props.text}</Link>
+  }
+}
+
 function App() {
   return (
-    <div>
-      <header>
+    <>
+      <header className='taille-content'>
         <Image src='logo'/>
-        <nav><Link>Accueil</Link><Link to='/A_Propos'>A Propos</Link></nav>
+        <nav><Lien to='/' text='Accueil'/><Lien to='/A_Propos' text='A Propos'/></nav>
       </header>
-      <div>
+      <div className='taille-content'>
         <Outlet/>
       </div>
       <footer>
@@ -22,7 +30,7 @@ function App() {
           <p>© 2020 Kasa. All rights reserved</p>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
 

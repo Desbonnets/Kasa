@@ -1,0 +1,20 @@
+.erreur {
+    color: #FF6060;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 139px;
+}
+
+h1{
+    margin: 0;
+    margin-top: 139px;
+    margin-bottom: 139px;
+    font-size: 288px;
+}
+
+.description{
+    margin: 0;
+    margin-bottom: 139px;
+    font-size: 36px;
+}
