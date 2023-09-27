@@ -1,0 +1,34 @@
+.location_card{
+    height: 340px;
+    width: 340px;
+    border-radius: 10px
+}
+
+.location_card > img{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) #FF6060;
+    border-radius: 10px;
+}
+
+.location_card > h4{
+    position: relative;
+    bottom: 100px;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 10;
+    color: #FFFFFF;
+}
+
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 50px;
+}
