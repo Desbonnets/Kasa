@@ -84,3 +84,50 @@ header{
 .page-body {
   flex-grow: 1;
 }
+
+/* Mask Group */
+.Image_presentation{
+  position: absolute;
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 163px;
+}
+
+/* Background */
+.Image_presentation > div{
+  /* position: absolute; */
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 163px;
+  
+  background: #F7F7F7;
+  border-radius: 25px;
+}
+
+
+/* IMG */
+.Image_presentation > div > img{
+  /* position: absolute; */
+  width: 1240px;
+  height: 1875px;
+  left: 100px;
+  top: -663px;
+
+  /* background: url(eric-muhr-P_XxsdVgtpQ-unsplash.jpg); */
+}
+
+/* Background */
+.Image_presentation > div{
+  /* position: absolute; */
+  width: 1240px;
+  height: 223px;
+  left: 100px;
+  top: 163px;
+
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+}

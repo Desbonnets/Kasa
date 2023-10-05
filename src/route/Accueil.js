@@ -1,11 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
-import {Location_card} from '../Compoment.js';
+import 'react-router-dom';
+import '../css/Accueil.css';
+import { LocationCard, Image } from '../Composant/Component';
 import data from '../logements.json';
 
-function Galerie(){
+function Galerie() {
   const locationCards = data.map((location) => (
-    <Location_card key={location.id} data={location} />
+    <LocationCard key={location.id} data={location} />
   ));
 
   return <div className='galerie' >{locationCards}</div>;
@@ -14,6 +15,7 @@ function Galerie(){
 export default function Accueil() {
   return (
     <>
+      <div className='Image_presentation'><div><Image src='images/accueil_img.svg' /></div></div>
       <Galerie />
     </>
   )

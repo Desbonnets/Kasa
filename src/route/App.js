@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import { Outlet } from 'react-router-dom';
-import {Image, Lien} from '../Compoment.js';
+import {Image, Lien} from '../Composant/Component.js';
 
 function Header(){
   return  <header className='page-header taille-content'>
