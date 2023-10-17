@@ -3,7 +3,7 @@ import '../css/Accueil.css';
 import {Link, useLocation } from 'react-router-dom';
 
 export function Image(props){     
-    return <img className={props.className} src={props.src} alt={props.alt} />
+    return <img key={props.id} className={props.className} src={props.src} alt={props.alt} />
 }
 
 export function Lien(props){
@@ -23,5 +23,5 @@ export function LocationCard(props){
 }
 
 export function Tag(props){
-    return <div className='tag'><p>{props.text}</p></div>;
+    return <div><div className='p-5'>{props.text}</div></div>;
 }

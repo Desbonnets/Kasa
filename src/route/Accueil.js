@@ -15,7 +15,7 @@ function Galerie() {
 export default function Accueil() {
   return (
     <>
-      <div className='Image_presentation'><div><Image src='images/accueil_img.svg' /></div></div>
+      <div className='image-header'><div><h2>Chez vous, partout et ailleurs</h2><Image src='../images/accueil_img.svg' /></div></div>
       <Galerie />
     </>
   )

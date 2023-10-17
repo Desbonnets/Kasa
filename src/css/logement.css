@@ -1,48 +1,185 @@
+.row-2{
+  width: 45%;
+}
 .accordion {
-    background-color: #FF6060;
-    color: #FFFFFF;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    border-radius: 5px;
-  }
+  background-color: #FF6060;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
   
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .panel {
-    border-radius: 5px;
-    padding: 0 18px;
-    background-color: #F6F6F6;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease-out;
-  }
+.accordion:after {
+  /* content: '\002B'; */
+  color: #777;
+  font-weight: bold;
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
 
-  .panel.open {
-    max-height: 300px;
-    transition: max-height 1s ease-in;
-  }
+.active:after {
+  /* content: "\2212"; */
+}
 
-  .panel > ul {
-    margin: 0;
-  }
+.panel {
+  border-radius: 5px;
+  padding: 0 18px;
+  background-color: #F6F6F6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
 
-  ul{
-    list-style-type: none;
-    padding: 0;
-  }
+.panel.open {
+  max-height: 300px;
+  transition: max-height 1s ease-in;
+}
+
+.panel > ul {
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tag{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag > div{
+  /* width: 115px; */
+  height: 25px;
+  margin: 5px;
+  margin-bottom: 24px;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+h2{
+  margin: 0;
+  font-size: 36px;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.profil{
+  display: flex;
+  text-align: right;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profil > div{
+  padding-right: 10px;
+}
+
+.profil > div > div{
+  font-size: 18px;
+}
+
+.profil > img{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+  background: #C4C4C4;
+}
+
+.accordeon_text{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 415px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  color: #fff;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.slides img {
+  align-self: center;
+  object-fit: cover;
+  width: 100%;
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  bottom: 25px;
+  position: absolute
+}
+
+.carousel_button {
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  /* margin: 0 10px; */
+}
+
+.button_left {
+  left: 20px;
+  top: 42%;
+}
+
+.button_rigth {
+  right: 20px;
+  top: 42%;
+}
+
+.counter {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.block{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+.p-5{
+  padding: 0 20px 0 20px;
+}

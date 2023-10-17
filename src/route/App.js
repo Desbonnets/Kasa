@@ -5,7 +5,7 @@ import {Image, Lien} from '../Composant/Component.js';
 
 function Header(){
   return  <header className='page-header taille-content'>
-            <Image src='images/logo_color.svg' alt='Logo'/>
+            <Image src='../images/logo_color.svg' alt='Logo'/>
             <nav><Lien to='/' text='Accueil'/><Lien to='/A_Propos' text='A Propos'/></nav>
           </header>
 }
@@ -13,7 +13,7 @@ function Header(){
 function Footer(){
   return  <footer className='page-footer'>
             <div>
-              <Image className='img_footer' src='images/logo_white.svg' alt='Logo'/>
+              <Image className='img_footer' src='../images/logo_white.svg' alt='Logo'/>
               <p>© 2020 Kasa. All rights reserved</p>
             </div>
           </footer>

@@ -16,25 +16,25 @@ class AccordionComponent extends Component {
 
     render() {
         const { isOpen } = this.state;
-        const { titre, type, text, list } = this.props;
+        const { titre, type, text, list, isrow_2 } = this.props;
     
         return (
-            <div>
-            <button className={`accordion ${isOpen ? 'active' : ''}`} onClick={this.toggleAccordion}>
-                {titre}
-            </button>
-            <div className={`panel ${isOpen ? 'open' : ''}`}>
-                <div>
-                    {type === 'text' && <p>{text}</p>}
-                    {type === 'list' && (
-                    <ul>
-                        {list.map((element, index) => (
-                        <li key={index}>{element}</li>
-                        ))}
-                    </ul>
-                    )}
+            <div className={`mb-5 ${isrow_2 ? 'row-2' : ''}`}>
+                <button className={`accordion ${isOpen ? 'active' : ''}`} onClick={this.toggleAccordion}>
+                    {titre}<span className={`arrow ${isOpen ? 'down' : 'up'}`}></span>
+                </button>
+                <div className={`panel ${isOpen ? 'open' : ''}`}>
+                    <div>
+                        {type === 'text' && <div className='accordeon_text'>{text}</div>}
+                        {type === 'list' && (
+                        <ul>
+                            {list.map((element, index) => (
+                            <li key={index}>{element}</li>
+                            ))}
+                        </ul>
+                        )}
+                    </div>
                 </div>
-            </div>
             </div>
         );
     }
