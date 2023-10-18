@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from '../Composant/Component';
+import Image from '../Composant/Image';
 
 class Carousel extends Component {
   constructor(props) {
@@ -33,10 +33,10 @@ class Carousel extends Component {
           ))}
         </div>
         <div className="controls">
-          <span className="counter">{currentIndex + 1} / {this.props.images.length}</span>
+          <span className={`counter${this.props.images.length === 1 ? ' none' : ''}`}>{currentIndex + 1} / {this.props.images.length}</span>
         </div>
-        <button className='carousel_button button_left' onClick={this.prevSlide}><span className='arrow left'></span></button>
-        <button className='carousel_button button_rigth' onClick={this.nextSlide}><span className='arrow rigth'></span></button>
+        <button className={`carousel_button button_left${this.props.images.length === 1 ? ' none' : ''}`} onClick={this.prevSlide}><span className='arrow left'></span></button>
+        <button className={`carousel_button button_rigth${this.props.images.length === 1 ? ' none' : ''}`} onClick={this.nextSlide}><span className='arrow rigth'></span></button>
       </div>
     );
   }

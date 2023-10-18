@@ -18,3 +18,20 @@ h1{
     margin-bottom: 139px;
     font-size: 36px;
 }
+
+@media (max-width: 768px) {
+    h1{
+        margin-top: 113px;
+        margin-bottom: 113px;
+        font-size: 96px;
+    }
+
+    .description{
+        margin-bottom: 113px;
+        font-size: 18px;
+    }
+
+    .erreur {
+        margin-bottom: 113px;
+    }
+}

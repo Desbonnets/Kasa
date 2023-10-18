@@ -1,11 +1,12 @@
 import React from 'react';
 import '../css/App.css';
 import { Outlet } from 'react-router-dom';
-import {Image, Lien} from '../Composant/Component.js';
+import Image from '../Composant/Image';
+import Lien from '../Composant/Lien';
 
 function Header(){
   return  <header className='page-header taille-content'>
-            <Image src='../images/logo_color.svg' alt='Logo'/>
+            <Image src={`../images/logo_color${window.innerWidth <= 768 ? '_mobil': ''}.svg`} alt='Logo'/>
             <nav><Lien to='/' text='Accueil'/><Lien to='/A_Propos' text='A Propos'/></nav>
           </header>
 }

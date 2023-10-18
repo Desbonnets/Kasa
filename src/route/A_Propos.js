@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image } from '../Composant/Component';
+import Image from '../Composant/Image';
 import AccordionComponent from '../Composant/Accordeon'
 
 export default function A_Propos() {

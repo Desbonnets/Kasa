@@ -127,6 +127,7 @@ p{
   display: flex;
   position: relative;
   width: 100%;
+  height: 100%;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -135,6 +136,7 @@ p{
   align-self: center;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   display: none;
 }
 
@@ -182,4 +184,56 @@ p{
 
 .p-5{
   padding: 0 20px 0 20px;
+}
+
+@media (max-width: 768px) {
+
+  .accordion {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .accordeon_text {
+    font-size: 18px;
+  }
+
+  .rigth {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-width: 0 4px 4px 0;
+  }
+
+  .left {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-width: 0 4px 4px 0;
+  }
+
+  .carousel {
+    height: 255px;
+  }
+  .tag > div{
+    height: 18px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .controls {
+    display: none;
+  }
+  .accordion {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .accordeon_text {
+    font-size: 12px;
+  }
+  .flex-col-rigth {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }

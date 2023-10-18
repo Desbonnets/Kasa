@@ -1,7 +1,8 @@
 import React from 'react'
 import 'react-router-dom';
 import '../css/Accueil.css';
-import { LocationCard, Image } from '../Composant/Component';
+import LocationCard from '../Composant/LocationCard';
+import Image from '../Composant/Image';
 import data from '../logements.json';
 
 function Galerie() {
