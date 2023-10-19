@@ -186,6 +186,10 @@ p{
   padding: 0 20px 0 20px;
 }
 
+.mw-7{
+  max-width: 70%;
+}
+
 @media (max-width: 768px) {
 
   .accordion {
@@ -233,7 +237,16 @@ p{
     font-size: 12px;
   }
   .flex-col-rigth {
+    width: 100%;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+  .row-2{
+    width: 100%;
   }
 }

@@ -42,7 +42,7 @@ export default function Fiche_logement() {
     <>
       <Carousel images={logement.pictures} />
       <div className='flex'>
-        <div>
+        <div className='mw-7'>
           <h2>{logement.title}</h2>
           <p>{logement.location}</p>
           <div><Tags id={id} /></div>
