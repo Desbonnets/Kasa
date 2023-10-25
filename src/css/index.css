@@ -20,10 +20,10 @@ a {
   text-decoration: none; /* Supprimer le soulignement par défaut des liens */
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 /* Style du footer */
 footer {
